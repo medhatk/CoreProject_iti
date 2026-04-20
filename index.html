@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoreProject</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+      <!--start of navbar-->
+    <div class="navbar">
+      <span class="logo"><i class="fas fa-store"></i> Core</span>
+      <div class="search">
+       <input type="text" placeholder="Search..." >
+        <button><i class="fas fa-search"></i></button>
+        </div>
+      <div class="list">
+        <button><i class="fas fa-bars" id="btnList"></i></button>
+      </div>
+      </div>    
+      <!--end of navbar-->
+
+      <!--start of sidebar-->
+      <div class="sidebar">
+                <button id="btnClose"><i class="fas fa-times"></i></button>
+        <div class="content">
+        <a href="#">Home</a>
+        <a href="#">shop</a>
+        <a href="#">About</a>
+        <a href="#">Team</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        </div>
+      </div>
+      <!--end of sidebar-->
+
+      <!--start of slider-->
+<section class="sliderContainer">
+    <button class="arrowLeft"><i class="fas fa-arrow-left"></i></button>
+
+    <div class="sliderWrapper">
+        <div class="slide" id="currentSlide">
+            <div class="textSide">
+                <h1 id="slideTitle"></h1>
+                <p id="slideDesc"></p>
+                <button class="shop-btn">Shop Now</button>
+            </div>
+            <div class="imageSide">
+                <img id="slideImage" src="">
+            </div>
+        </div>
+    </div>
+
+    <button class="arrowRight"><i class="fas fa-arrow-right"></i></button>
+</section>
+      
+    <!--end of slider-->
+
+    <!--start of banners-->
+    <div class="banners">
+
+      <!--دول هيتظبط وراهم الصور في ال css-->
+      <div class="banner1">
+        <h3>banner1</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur
+        </p>
+        <button>Shop Now</button>
+      </div>
+      <div class="banner2">
+        <h3>banner2</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur
+        </p>
+        <button>Shop Now</button>
+      </div>
+      <div class="banner3">
+        <h3>banner3</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur
+        </p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+    <!--end of banners-->
+
+    <!--start of gridphotos-->
+    <div class="gridphotos">
+        <img src="image/1.jpg" class="big" alt="1" />
+        <img src="image/2.jpg" alt="2" />
+        <img src="image/3.jpg" alt="3" />
+        <img src="image/4.jpg" alt="4" />
+        <img src="image/5.jpg" alt="5" />
+        <img src="image/6.jpg" alt="6" />
+        <img src="image/7.jpg" alt="7" />
+        <img src="image/8.jpg" alt="8" />
+        <img src="image/9.jpg" alt="9" />
+      </div>
+
+      <!-- popupDiv -->
+       <div  id="popupDiv" class ="popupDiv">
+        <div class="popupContent">
+            <img src="" alt="popupImage" id="popupImage">
+            <div class="popupText">
+            <h2 id="popupTitle">Lorem ipsum dolor sit amet.</h2>
+            <p id="popupDesc"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae</p> 
+            </div>
+        <span class="closeBtn"><i class="fas fa-times"></i></span>
+</div>
+       </div>
+    </div>
+    <!--end of gridphotos-->
+
+    <!--start of footer-->
+    <section class="LinksAndNewsletter">
+      <div class="container">
+        <ul>
+          <h3>Quick Links</h3>
+          <li><a href="#">My Order</a></li>
+          <li><a href="#">My WishList</a></li>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">My Favorite</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+        <ul>
+          <h3>Links</h3>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Behance</a></li>
+          <li><a href="#">Linkedin</a></li>
+          <li><a href="#">Mostaql</a></li>
+        </ul>
+        <ul>
+          <h3>Quik Linkes</h3>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      
+      <div class="Newsletter">
+        <h1>Newsletter</h1>
+        <p>subscribe for latest updates</p>
+        <form>
+          <input type="text" placeholder="Enter your message" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      </div>
+    </section>
+    <!--end of footer-->
+    <footer>
+      <p>&copy; 2026 CoreProject.By Medhat Karam, All rights reserved.</p>
+    </footer>
+
+    <script src="action.js"></script>
+  </body>
+</html>
