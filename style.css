@@ -347,13 +347,16 @@
 
 .LinksAndNewsletter .container {
   display: flex;
-  gap: 100px;
+  justify-content: space-between;
+  gap: 150px;
   background-color: var(--primary-color);
-  padding: 20px;
+  padding: 5px;
   border-radius: 10px;
+  flex: 1;
 }
 .LinksAndNewsletter .container ul {
   list-style: none;
+  text-align: left;
 }
 .LinksAndNewsletter .container ul li {
   margin-bottom: 10px;
@@ -361,9 +364,6 @@
 .LinksAndNewsletter .container ul li a {
   text-decoration: none;
   color: var(--font-color);
-}
-.LinksAndNewsletter .container ul li :hover {
-  background-color: whitesmoke;
 }
 .LinksAndNewsletter .container .Newsletter {
   margin-left: 250px;
@@ -462,9 +462,6 @@ footer {
 }
 
 /* end for tablets */
-
-
-
 
 /* for mobile */
 @media (max-width: 767px) {
@@ -577,27 +574,33 @@ footer {
   }
 
   .LinksAndNewsletter .container {
+    align-items: center;
     flex-direction: column;
     gap: 10px;
     text-align: center;
     margin-right: 0;
     padding-right: 60px;
   }
+  .LinksAndNewsletter .container ul {
+    text-align: center;
+  }
 
   .LinksAndNewsletter .container .Newsletter {
     margin-left: 20px;
-    padding-right: 0;
+    padding-left: 50px;
   }
 
   .LinksAndNewsletter .container .Newsletter form {
     flex-direction: column;
-    align-items: center;
   }
   .LinksAndNewsletter .container .Newsletter form button {
     width: 50%;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 5px;
   }
   footer {
-    border-radius: 40px;
+    border-radius: 10px;
   }
   footer p {
     text-align: center;
