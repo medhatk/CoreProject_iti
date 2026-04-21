@@ -49,6 +49,7 @@ const slideImage = document.getElementById("slideImage");
 function displaySlide() {
   const slide = document.getElementById("currentSlide");
   slide.style.animation = "none";
+  slide.offsetWidth;
   slide.style.animation = "zoomIn 0.5s ease";
   slideTitle.textContent = slides[activeIndex].title;
   slideDesc.textContent = slides[activeIndex].desc;
